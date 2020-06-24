@@ -9,6 +9,6 @@ import com.bitcamp.legacyHT.domains.BicycleDTO;
 @Repository
 public interface BicycleMapper {
 
-	List<BicycleDTO> list();
+//	List<BicycleDTO> list();
 	
 }

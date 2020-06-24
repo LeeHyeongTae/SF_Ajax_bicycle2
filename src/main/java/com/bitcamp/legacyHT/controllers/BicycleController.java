@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.bitcamp.legacyHT.services.BicycleService;
 
 //@RestController
+//@RequestMapping("/bicycle")
 @Controller
-@RequestMapping("/bicycle")
 public class BicycleController {
-	
-	@Autowired BicycleService bicycleService;
-	
-	@GetMapping("/list")
-	public HashMap<String, Object> bicycle() {
-		return bicycleService.list(); 
-	}
+//	
+//	@Autowired BicycleService bicycleService;
+//	
+//	@GetMapping("/list")
+//	public HashMap<String, Object> bicycle() {
+//		return bicycleService.list(); 
+//	}
 }

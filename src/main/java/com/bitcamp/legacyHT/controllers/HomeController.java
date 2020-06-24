@@ -1,4 +1,4 @@
-package com.bitcamp.legacyHT;
+package com.bitcamp.legacyHT.controllers;
 
 import java.text.DateFormat;
 import java.util.Date;

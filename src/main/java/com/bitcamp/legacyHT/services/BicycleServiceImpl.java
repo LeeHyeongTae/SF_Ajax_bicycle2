@@ -13,13 +13,13 @@ import com.bitcamp.legacyHT.mappers.BicycleMapper;
 public class BicycleServiceImpl implements BicycleService{
 	
 //	@Autowired BicycleMapper bicycleMapper;
-	
-	@Override
-	public HashMap<String, Object> list() {
+//	
+//	@Override
+//	public HashMap<String, Object> list() {
 //		List<BicycleDTO> bicycles = bicycleMapper.list();
-		HashMap<String, Object> map = new HashMap<String, Object>();
+//		HashMap<String, Object> map = new HashMap<String, Object>();
 //		map.put("list", bicycles);
-		return map;
-	}
+//		return map;
+//	}
 
 }

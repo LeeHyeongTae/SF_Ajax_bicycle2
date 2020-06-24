@@ -7,6 +7,6 @@ import org.springframework.stereotype.Component;
 @Component
 public interface BicycleService {
 
-	HashMap<String, Object> list();
+//	HashMap<String, Object> list();
 
 }
