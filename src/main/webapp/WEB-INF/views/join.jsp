@@ -1,106 +1,172 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<style type="text/css">
-</style>
-<!-- 합쳐지고 최소화된 최신 CSS -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<!-- 부가적인 테마 -->
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
-<script
-	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-</head>
-<body>
-	<div id="root">
-		<div class="App">
-			<div class="header">
-				<img
-					src="http://eldoradorentals.com/sites/all/themes/colab/images/pets-header.png"
-					alt="aminal images" class="header-img img-fluid">
-			</div>
-			<div class="PostWrapper">
-				<div class="Navigate">
-					<nav class="navbar navbar-expand navbar-dark bg-dark">
-						<a href="/"><span class="navbar-brand">Animal Lover</span></a>
-						<div class="mr-auto navbar-nav">
-							<a class="nav-link" href="/">Home</a><a class="nav-link"
-								href="/catbreeds">Cat Breeds</a><a class="nav-link"
-								href="/dogbreeds">Dog Breeds</a><a class="nav-link"
-								id="join_btn">Login</a>
+<jsp:include page="header.jsp"></jsp:include>
+			<main class="v-content" data-booted="true"
+				style="padding: 64px 0px 612px;">
+				<div class="v-content__wrap">
+					<div data-v-fae5bece=""
+						class="container fill-height container--fluid">
+						<div data-v-fae5bece="" class="row align-center justify-center">
+							<div data-v-fae5bece="" class="v-card v-sheet theme--light">
+								<iframe data-v-fae5bece="" width="1920" height="1080"
+									src="https://www.youtube.com/embed/d2sCSt-6_Mo"
+									frameborder="0"
+									allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen="allowfullscreen"></iframe>
+							</div>
 						</div>
-					</nav>
+					</div>
 				</div>
-				<div class="Post">
-					<form class="sign-up-container">
-						<div class="form-group row">
-							<label class="form-label col-form-label col-sm-2">Email</label>
-							<div class="col-sm-10">
-								<input placeholder="Email" type="email" class="form-control"
-									value="">
+			</main>
+			<!-- footer -->
+			<jsp:include page="footer.jsp"></jsp:include>
+		</div>
+		<div role="document" tabindex="0"
+			class="v-dialog__content v-dialog__content--active"
+			style="z-index: 202;">
+			<div class="v-dialog v-dialog--active v-dialog--persistent"
+				style="transform-origin: center center; max-width: 500px;">
+				<div class="container">
+					<div class="v-card v-sheet theme--light">
+						<header
+							class="v-sheet v-sheet--tile theme--dark v-toolbar v-toolbar--flat primary"
+							style="height: 64px;">
+							<div class="v-toolbar__content" style="height: 64px;">
+								<div class="v-toolbar__title">Join</div>
+								<div class="spacer"></div>
 							</div>
-						</div>
-						<div class="form-group row">
-							<label class="form-label col-form-label col-sm-2">Password</label>
-							<div class="col-sm-10">
-								<input placeholder="Password" type="password"
-									class="form-control" value="">
-							</div>
-						</div>
-						<div class="form-group row">
-							<label class="form-label col-form-label col-sm-2">Name</label>
-							<div class="col-sm-10">
-								<input placeholder="Name" type="text" class="form-control"
-									value="">
-							</div>
-						</div>
-						<fieldset>
-							<div class="form-group row">
-								<label class="form-label col-form-label col-sm-2">Type
-									of you</label>
-								<div class="col-sm-10">
-									<div class="form-check">
-										<input name="formHorizontalRadios" type="radio"
-											id="formHorizontalRadios1" class="form-check-input"
-											value="dog-person"><label title=""
-											for="formHorizontalRadios1" class="form-check-label">Dog-person</label>
+						</header>
+						<div class="v-card__text">
+							<form novalidate="novalidate" class="v-form">
+								<div
+									class="v-input theme--light v-text-field v-text-field--is-booted">
+									<div class="v-input__prepend-outer">
+										<div class="v-input__icon v-input__icon--prepend">
+											<i aria-hidden="true"
+												class="v-icon notranslate mdi mdi-account theme--light"></i>
+										</div>
 									</div>
-									<div class="form-check">
-										<input name="formHorizontalRadios" type="radio"
-											id="formHorizontalRadios2" class="form-check-input"
-											value="cat-person"><label title=""
-											for="formHorizontalRadios2" class="form-check-label">Cat-person</label>
-									</div>
-									<div class="form-check">
-										<input name="formHorizontalRadios" type="radio"
-											id="formHorizontalRadios3" class="form-check-input"
-											value="animal-person"><label title=""
-											for="formHorizontalRadios3" class="form-check-label">Animal-person</label>
+									<div class="v-input__control">
+										<div class="v-input__slot">
+											<div class="v-text-field__slot">
+												<label for="nameText" class="v-label theme--light"
+													style="left: 0px; right: auto; position: absolute;">Name</label><input
+													name="name" id="nameText" type="text">
+											</div>
+										</div>
+										<div class="v-text-field__details">
+											<div class="v-messages theme--light">
+												<div class="v-messages__wrapper"></div>
+											</div>
+										</div>
 									</div>
 								</div>
-							</div>
-						</fieldset>
-						<div class="form-group row">
-							<div class="col-sm-10 offset-sm-2">
-								<button type="submit" class="btn btn-primary">Submit</button>
-							</div>
+								<div
+									class="v-input theme--light v-text-field v-text-field--is-booted">
+									<div class="v-input__prepend-outer">
+										<div class="v-input__icon v-input__icon--prepend">
+											<i aria-hidden="true"
+												class="v-icon notranslate mdi mdi-email theme--light"></i>
+										</div>
+									</div>
+									<div class="v-input__control">
+										<div class="v-input__slot">
+											<div class="v-text-field__slot">
+												<label for="emailText" class="v-label theme--light"
+													style="left: 0px; right: auto; position: absolute;">E-mail</label><input
+													name="email" id="emailText" type="text">
+											</div>
+										</div>
+										<div class="v-text-field__details">
+											<div class="v-messages theme--light">
+												<div class="v-messages__wrapper"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="v-input theme--light v-text-field v-text-field--is-booted">
+									<div class="v-input__prepend-outer">
+										<div class="v-input__icon v-input__icon--prepend">
+											<i aria-hidden="true"
+												class="v-icon notranslate mdi mdi-lock theme--light"></i>
+										</div>
+									</div>
+									<div class="v-input__control">
+										<div class="v-input__slot">
+											<div class="v-text-field__slot">
+												<label for="passwordText" class="v-label theme--light"
+													style="left: 0px; right: auto; position: absolute;">Password</label><input
+													name="password" id="passwordText" type="password">
+											</div>
+										</div>
+										<div class="v-text-field__details">
+											<div class="v-messages theme--light">
+												<div class="v-messages__wrapper"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="v-input theme--light v-input--selection-controls v-input--checkbox">
+									<div class="v-input__control">
+										<div class="v-input__slot">
+											<div class="v-input--selection-controls__input">
+												<i aria-hidden="true"
+													class="v-icon notranslate mdi mdi-checkbox-blank-outline theme--light"></i><input
+													aria-checked="false" id="input-104" role="checkbox"
+													type="checkbox" required="required" value="">
+												<div class="v-input--selection-controls__ripple"></div>
+											</div>
+											<label for="input-104" class="v-label theme--light"
+												style="left: 0px; right: auto; position: relative;">Do
+												you agree?</label>
+										</div>
+										<div class="v-messages theme--light">
+											<div class="v-messages__wrapper"></div>
+										</div>
+									</div>
+								</div>
+							</form>
 						</div>
-					</form>
+						<div class="v-card__actions">
+							<button type="button"
+								class="mr-4 v-btn v-btn--contained theme--light v-size--default light-green">
+								<span class="v-btn__content">submit</span>
+							</button>
+							<button type="button"
+								class="v-btn v-btn--contained theme--light v-size--default amber">
+								<span class="v-btn__content">clear</span>
+							</button>
+							<div class="spacer"></div>
+							<button type="button"
+								class="v-btn v-btn--contained theme--light v-size--default primary">
+								<span class="v-btn__content">Login</span>
+							</button>
+							<button type="button"
+								class="v-btn v-btn--contained theme--light v-size--default gray">
+								<span class="v-btn__content">Cancel</span>
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- built files will be auto injected -->
+  <script type="text/javascript" src="/js/chunk-vendors.js"></script>
+  <script type="text/javascript" src="/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      vuetify: new Vuetify(),
+    })
+  </script>
 </body>
+
 </html>
 <script>
-$('#join_btn').click(function(){
-	alert("<%=application.getContextPath()%>")
-	location.href = "{<%=application.getContextPath()%>}/members/join/form"
-})
+
 </script>
