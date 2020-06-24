@@ -1,0 +1,11 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bitcamp.legacyHT.mappers.BicycleMapper">
+    <!-- <select id="list" resultType="com.bitcamp.legacyHT.domains.BicycleDTO">
+        select
+            bicycleSeq, title, image, year, price, manufacturer, kind
+        from bicycle
+    </select> -->
+</mapper>
