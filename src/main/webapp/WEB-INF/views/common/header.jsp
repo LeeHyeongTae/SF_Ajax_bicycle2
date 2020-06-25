@@ -18,12 +18,12 @@
 <body>
 	<div data-app="true"
 		class="v-application v-application--is-ltr theme--light" id="inspire">
-		<div class="v-overlay v-overlay--active theme--dark"
+		<!-- <div class="v-overlay v-overlay--active theme--dark"
 			style="z-index: 201;">
 			<div class="v-overlay__scrim"
 				style="opacity: 0.46; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div>
 			<div class="v-overlay__content"></div>
-		</div>
+		</div> -->
 		<div class="v-application--wrap">
 			<nav
 				class="v-navigation-drawer v-navigation-drawer--close v-navigation-drawer--fixed v-navigation-drawer--is-mobile theme--light"
@@ -148,7 +148,7 @@
 						role="button" aria-haspopup="true" aria-expanded="true">
 						<span class="v-btn__content"><div class="v-avatar"
 								style="height: 48px; min-width: 48px; width: 48px;">
-								<i aria-hidden="true"
+								<i aria-hidden="true" id="login_btn"
 									class="v-icon notranslate mdi mdi-account-circle theme--dark"></i>
 							</div></span>
 					</button>

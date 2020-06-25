@@ -11,10 +11,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class MemberController {
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
+	@GetMapping("/login/form")
+	public String loginForm() {
+		logger.info("@---------------- login ----------------@");
+		return "common/login";
+	}
+	
 	@GetMapping("/join/form")
 	public String joinForm() {
-		logger.info("@----------------이동화면 진입----------------@");
-		return "join";
+		logger.info("@---------------- join ----------------@");
+		return "common/join";
 	}
 	
 }

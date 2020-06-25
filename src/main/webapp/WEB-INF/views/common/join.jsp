@@ -139,9 +139,9 @@
 								<span class="v-btn__content">clear</span>
 							</button>
 							<div class="spacer"></div>
-							<button type="button"
+							<button type="button" 
 								class="v-btn v-btn--contained theme--light v-size--default primary">
-								<span class="v-btn__content">Login</span>
+								<span id="login_btn" class="v-btn__content">Login</span>
 							</button>
 							<button type="button"
 								class="v-btn v-btn--contained theme--light v-size--default gray">
@@ -168,5 +168,9 @@
 
 </html>
 <script>
-
+$('#login_btn').click(function(e){
+	e.preventDefault()
+	alert("<%=application.getContextPath()%>")
+	location.href = "<%=application.getContextPath()%>/members/login/form"
+})
 </script>
