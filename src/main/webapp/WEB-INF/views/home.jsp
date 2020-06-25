@@ -37,7 +37,7 @@
 <script>
 $('#login_btn').click(function(e){
 	e.preventDefault()
-	alert("${application.getContextPath()}")
-	location.href = "${application.getContextPath()}/legacyHT/members/login/form"
+	alert("${context}")
+	location.href = "${context}/members/login/form"
 })
 </script>
