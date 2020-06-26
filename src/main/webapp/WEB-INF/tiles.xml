@@ -1,9 +1,37 @@
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 <tiles-definitions>
-	<definition name="noTiles" template="/WEB-INF/views/layouts/public.jsp">
+	<!-- <definition name="noTiles" template="/WEB-INF/views/layouts/public.jsp">
 		<put-attribute name="noTemplate" value=""/>
 	</definition>
 	<definition name="*.jsp" extends="noTiles">
 		<put-attribute name="noTemplate" value="/WEB-INF/views/{1}.jsp"/>
+	</definition> -->
+	<!-- home -->
+	<definition name="public" template="/WEB-INF/views/layouts/public.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp"/>
+		<put-attribute name="content" value="/WEB-INF/views/common/content.jsp"/>	
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp"/>	
+	</definition>
+	<definition name="*/*.tiles" extends="public">
+		<put-attribute name="home" value="/WEB-INF/views/{1}/{2}"/>
+	</definition>
+	<!-- user -->
+	<definition name="user" template="/WEB-INF/views/layouts/user.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp"/>
+		<put-attribute name="title" value="사용자화면"/>
+		<put-attribute name="content" value="/WEB-INF/views/common/content.jsp"/>	
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp"/>	
+	</definition>
+	<definition name="*/*.user" extends="user">
+		<put-attribute name="home" value="/WEB-INF/views/{1}/{2}"/>
+	</definition>
+	<!-- admin -->
+	<definition name="admin" template="/WEB-INF/views/layouts/admin.jsp">
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp"/>
+		<put-attribute name="content" value="/WEB-INF/views/common/content.jsp"/>	
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp"/>	
+	</definition>
+	<definition name="*/*.admin" extends="admin">
+		<put-attribute name="home" value="/WEB-INF/views/{1}/{2}"/>
 	</definition>
 </tiles-definitions>

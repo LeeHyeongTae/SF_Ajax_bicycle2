@@ -1,8 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<footer
-	class="v-footer font-weight-medium v-sheet v-sheet--tile theme--light v-footer--absolute black"
-	data-booted="true" style="left: 0px; right: 0px; bottom: 0px;">
 	<div class="v-card v-sheet theme--light">
 		<div
 			class="v-window v-item-group theme--dark v-window--show-arrows-on-hover v-carousel"
@@ -119,4 +116,3 @@
 	<div class="row no-gutters justify-center">
 		<span class="white--text"> © 2020 - <strong>Bitcamp</strong></span>
 	</div>
-</footer>
