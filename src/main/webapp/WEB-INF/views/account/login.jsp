@@ -18,7 +18,6 @@
 				</div>
 			</main>
 			<!-- footer -->
-		</div>
 		<div role="document"
 			class="v-dialog__content v-dialog__content--active"
 			style="z-index: 202;" tabindex="0">
@@ -103,7 +102,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 	<!-- built files will be auto injected -->
 	<script type="text/javascript" src="/js/chunk-vendors.js"></script>
 	<script type="text/javascript" src="/js/app.js"></script>

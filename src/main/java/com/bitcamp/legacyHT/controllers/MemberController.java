@@ -14,13 +14,13 @@ public class MemberController {
 	@GetMapping("/login/form")
 	public String loginForm() {
 		logger.info("@---------------- login ----------------@");
-		return "common/login";
+		return "account/login";
 	}
 	
 	@GetMapping("/join/form")
 	public String joinForm() {
 		logger.info("@---------------- join ----------------@");
-		return "common/join";
+		return "account/join";
 	}
 	
 }

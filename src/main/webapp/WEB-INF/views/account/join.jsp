@@ -17,8 +17,7 @@
 					</div>
 				</div>
 			</main>
-			<!-- footer -->
-		</div>
+			<!-- login form -->
 		<div role="document" tabindex="0"
 			class="v-dialog__content v-dialog__content--active"
 			style="z-index: 202;">
@@ -150,7 +149,6 @@
 				</div>
 			</div>
 		</div>
-	</div>
 	<!-- built files will be auto injected -->
   <script type="text/javascript" src="/js/chunk-vendors.js"></script>
   <script type="text/javascript" src="/js/app.js"></script>
